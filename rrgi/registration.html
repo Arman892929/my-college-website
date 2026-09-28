@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RRGI College - Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>RRGI College</h1>
+
+        <p>Empowering Students • Building Futures</p>
+
+
+        <nav aria-label="Main Navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="faculties.html">Faculty</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="registration.html">
+                        Registration
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="registration-portal">
+
+            <article>
+
+                <span class="visitor-badge">
+                    NEW STUDENT
+                </span>
+
+
+                <h2>
+                    RRGI College Registration
+                </h2>
+
+
+                <p>
+                    Welcome to RRGI College.
+                    Please fill out the registration form
+                    carefully to register as a new student.
+                </p>
+
+            </article>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>
+                        Personal Information
+                    </legend>
+
+
+                    <p>
+
+                        <label for="first-name">
+                            First Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first_name"
+                            placeholder="Enter your first name"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="last-name">
+                            Last Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last_name"
+                            placeholder="Enter your last name"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="father-name">
+                            Father's Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="father-name"
+                            name="father_name"
+                            placeholder="Enter father's name"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="mobile">
+                            Mobile Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            placeholder="Enter 10 digit mobile number"
+                            pattern="[0-9]{10}"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="dob">
+                            Date of Birth *
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="city">
+                            City *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Enter your city"
+                            required>
+
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        Academic Information
+                    </legend>
+
+
+                    <p>
+
+                        <label for="course">
+                            Select Course *
+                        </label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required>
+
+                            <option value="">
+                                -- Select Course --
+                            </option>
+
+                            <option value="btech-cse">
+                                B.Tech - Computer Science & Engineering
+                            </option>
+
+                            <option value="btech-it">
+                                B.Tech - Information Technology
+                            </option>
+
+                            <option value="bca">
+                                BCA - Bachelor of Computer Applications
+                            </option>
+
+                            <option value="bba">
+                                BBA - Bachelor of Business Administration
+                            </option>
+
+                            <option value="bcom">
+                                B.Com - Bachelor of Commerce
+                            </option>
+
+                            <option value="mca">
+                                MCA - Master of Computer Applications
+                            </option>
+
+                        </select>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="qualification">
+                            Highest Qualification *
+                        </label>
+
+                        <select
+                            id="qualification"
+                            name="qualification"
+                            required>
+
+                            <option value="">
+                                -- Select Qualification --
+                            </option>
+
+                            <option value="10th">
+                                10th
+                            </option>
+
+                            <option value="12th">
+                                12th
+                            </option>
+
+                            <option value="diploma">
+                                Diploma
+                            </option>
+
+                            <option value="graduation">
+                                Graduation
+                            </option>
+
+                        </select>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="percentage">
+                            Percentage / CGPA
+                        </label>
+
+                        <input
+                            type="text"
+                            id="percentage"
+                            name="percentage"
+                            placeholder="Enter percentage or CGPA">
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Gender *
+                        </strong>
+
+                        <br><br>
+
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="male"
+                            required>
+
+                        <label for="male">
+                            Male
+                        </label>
+
+
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="female">
+
+                        <label for="female">
+                            Female
+                        </label>
+
+
+                        <input
+                            type="radio"
+                            id="other"
+                            name="gender"
+                            value="other">
+
+                        <label for="other">
+                            Other
+                        </label>
+
+                    </p>
+
+                </fieldset>
+
+
+
+                <!-- INTEREST -->
+
+                <fieldset>
+
+                    <legend>
+                        Area of Interest
+                    </legend>
+
+
+                    <p>
+
+                        <strong>
+                            Select your interests:
+                        </strong>
+
+                        <br><br>
+
+
+                        <input
+                            type="checkbox"
+                            id="coding"
+                            name="interest"
+                            value="coding">
+
+                        <label for="coding">
+                            Coding & Programming
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="web"
+                            name="interest"
+                            value="web">
+
+                        <label for="web">
+                            Web Development
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="app"
+                            name="interest"
+                            value="app">
+
+                        <label for="app">
+                            App Development
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="ai"
+                            name="interest"
+                            value="ai">
+
+                        <label for="ai">
+                            Artificial Intelligence
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="sports"
+                            name="interest"
+                            value="sports">
+
+                        <label for="sports">
+                            Sports & Cultural Activities
+                        </label>
+
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Address Information
+                    </legend>
+
+
+                    <p>
+
+                        <label for="address">
+                            Full Address *
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your complete address"
+                            required></textarea>
+
+                    </p>
+
+                </fieldset>
+
+
+
+       
+
+                <fieldset>
+
+                    <legend>
+                        Confirmation
+                    </legend>
+
+
+                    <p>
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required>
+
+                        <label for="terms">
+                            I confirm that all information
+                            provided by me is correct. *
+                        </label>
+
+                    </p>
+
+
+                    <p>
+
+                        <button type="submit">
+                            Register Now →
+                        </button>
+
+
+                        <button type="reset">
+                            Reset Form
+                        </button>
+
+                    </p>
+
+                </fieldset>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 RRGI College.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Empowering Students • Building Futures
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
